@@ -29,6 +29,7 @@ const HomePage = () => {
           {rowData.map((item) => (
             <Product
               key={item.id}
+              id={item.id}
               title={item.title}
               desc={item.description}
               price={item.price}

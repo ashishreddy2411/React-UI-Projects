@@ -13,19 +13,23 @@ const HeaderNav = () => {
   const [count, setCount] = useState(0);
   return (
     <div className="headerNavbar">
+      <Link to="/" style={{ color:"White", textDecoration: "none" }}>
       <div className="header_logo">
         <StoreIcon fontSize="large" />
         <h2>Shopping Arena</h2>
       </div>
+      </Link>
       <div className="header_searchBar">
         <input className="header_searchInput" type="text" />
         <SearchIcon className="header_searchIcon" />
       </div>
       <div className="header_icons">
+        <Link to="/login" style={{ textDecoration: "none" }}>
         <div className="nav__item">
           <span className="header_option_line_one">Hello Guest</span>
           <span className="header_option_line_two">Sign In</span>
         </div>
+        </Link>
         <div className="nav__item">
           <span className="header_option_line_one">Your</span>
           <span className="header_option_line_two">Shop</span>

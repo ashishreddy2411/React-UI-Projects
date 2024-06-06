@@ -2,7 +2,7 @@ import React from "react";
 
 import "../styles/Product.css";
 import { useBasketValue } from "../Context/BasketContext";
-const Product = ({ title, desc, price, url, rating }) => {
+const Product = ({ id,title, desc, price, url, rating }) => {
   const renderStars = (rate) => {
     rate = Math.round(rate);
     let stars = [];
@@ -17,6 +17,7 @@ const Product = ({ title, desc, price, url, rating }) => {
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
+        id:id,
         title: title,
         desc: desc,
         price: price,
@@ -24,6 +25,7 @@ const Product = ({ title, desc, price, url, rating }) => {
         rating: rating,
       },
     });
+    alert("Product added to cart successfully");
   }
   return (
     <div className="product">
