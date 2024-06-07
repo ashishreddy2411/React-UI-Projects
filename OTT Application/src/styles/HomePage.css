@@ -1,0 +1,58 @@
+/* HomePage.css */
+.movie_home-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.movie_search {
+    margin-bottom: 20px;
+}
+
+.movie_search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.movie_home-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.movie {
+    flex: 0 0 auto;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie h3 {
+    margin: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.movie p {
+    margin: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+}
