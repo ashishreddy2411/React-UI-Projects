@@ -1,0 +1,24 @@
+/* ViewTasks.css */
+
+.View_AllTasks {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .View_AllTasks > div {
+    flex: 1;
+    margin: 8px;
+    min-width: 200px;
+  }
+  
+  .View_AllTasks h1 {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+  }
+  
+  .View_AllTasks .Task {
+    margin-bottom: 16px;
+  }
+  
