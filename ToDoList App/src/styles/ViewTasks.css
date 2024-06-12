@@ -1,24 +1,41 @@
 /* ViewTasks.css */
 
 .View_AllTasks {
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    flex-wrap: wrap;
-  }
-  
-  .View_AllTasks > div {
-    flex: 1;
-    margin: 8px;
-    min-width: 200px;
-  }
-  
-  .View_AllTasks h1 {
-    font-size: 1.5em;
-    margin-bottom: 16px;
-  }
-  
-  .View_AllTasks .Task {
-    margin-bottom: 16px;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.View_AllTasks > div {
+  flex: 1;
+  margin: 8px;
+  min-width: 200px;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.View_AllTasks h1 {
+  font-size: 1.5em;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.View_AllTasks .Task {
+  margin-bottom: 16px;
+}
+
+.border-empty {
+  border: 2px solid #f44336; /* Red for no tasks */
+}
+
+.border-few {
+  border: 2px solid #ffeb3b; /* Yellow for few tasks */
+}
+
+.border-many {
+  border: 2px solid #4caf50; /* Green for many tasks */
+}

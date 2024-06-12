@@ -1,56 +1,56 @@
 /* Task.css */
 
 .Task {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    width: 250px; /* Reduced width */
-    background-color: #fff;
-  }
-  
-  .Task_title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .Task_description {
-    font-size: 1em;
-    margin-bottom: 16px;
-    color: #555;
-  }
-  
-  .Task_buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .Task button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    border-radius: 4px;
-    transition: background 0.3s;
-  }
-  
-  .Task button:hover {
-    background: #f0f0f0;
-  }
-  
-  .Task button:focus {
-    outline: none;
-    background: #e0e0e0;
-  }
-  
-  .Task .Task_done svg {
-    color: green;
-  }
-  
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 250px; /* Reduced width */
+  background-color: #fff;
+}
+
+.Task_title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.Task_description {
+  font-size: 1em;
+  margin-bottom: 16px;
+  color: #555;
+}
+
+.Task_buttons {
+  display: flex;
+  justify-content: space-between; /* Ensure buttons are spaced evenly */
+  margin-top: auto; /* Push buttons to the bottom */
+}
+
+.Task button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.Task button:hover {
+  background: #f0f0f0;
+}
+
+.Task button:focus {
+  outline: none;
+  background: #e0e0e0;
+}
+
+.Task .Task_done svg {
+  color: green;
+}
